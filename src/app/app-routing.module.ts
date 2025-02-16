@@ -8,10 +8,14 @@ const routes: Routes = [
   // {path: '', redirectTo:'/home' ,pathMatch:'full'},
   {path: '', component: HomeComponent},
   {path: 'about', component: AboutComponent},
+  {path: '',
+    loadChildren: () =>
+      import('./home/home.module').then((m) => m.HomeModule),
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { }6
