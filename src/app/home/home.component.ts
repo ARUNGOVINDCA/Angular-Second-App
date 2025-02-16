@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {  } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,5 +11,10 @@ changeTitle() {
 throw new Error('Method not implemented.');
 }
 title: any;
+
+// constructor(private router:Router){}
+
+// navigate() {
+//   this.router.navigate(['/about'])};
 
 }
