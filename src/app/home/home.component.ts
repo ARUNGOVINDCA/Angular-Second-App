@@ -7,9 +7,9 @@ import {  } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-changeTitle() {
-throw new Error('Method not implemented.');
-}
+// changeTitle() {
+// throw new Error('Method not implemented.');
+// }
 title: any;
 
 // constructor(private router:Router){}
